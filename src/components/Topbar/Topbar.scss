@@ -1,0 +1,34 @@
+.topbar {
+  background: var(--g1);
+  padding: 5px 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.topbar-in {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topbar a {
+  color: var(--g7);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+  
+  &:hover {
+    color: var(--g8);
+  }
+}
+
+.tlinks {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}

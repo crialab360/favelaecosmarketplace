@@ -1,0 +1,109 @@
+footer {
+  background: var(--g1);
+  padding: 44px 0 0;
+}
+
+.foot-in {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 18px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 36px;
+}
+
+.foot-brand p {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12.5px;
+  line-height: 1.7;
+  margin: 12px 0 18px;
+}
+
+.socials {
+  display: flex;
+  gap: 9px;
+}
+
+.soc-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+  
+  &:hover {
+    background: rgba(120, 216, 50, 0.2);
+    border-color: var(--g6);
+  }
+}
+
+.foot-col {
+  h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11.5px;
+    color: var(--g7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  
+  ul {
+    list-style: none;
+    
+    li {
+      margin-bottom: 7px;
+      
+      a {
+        color: rgba(255, 255, 255, 0.48);
+        text-decoration: none;
+        font-size: 12.5px;
+        transition: color 0.2s;
+        
+        &:hover {
+          color: var(--g7);
+        }
+      }
+    }
+  }
+}
+
+.foot-bot {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 18px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+  p {
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.foot-badges {
+  display: flex;
+  gap: 7px;
+}
+
+.fbadge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,74 @@
+.vend-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.vend-card {
+  background: #fff;
+  border: 1px solid var(--cinza-borda);
+  border-radius: var(--radius-card);
+  padding: 18px;
+  text-align: center;
+  transition: all 0.25s;
+  cursor: pointer;
+  
+  &:hover {
+    border-color: var(--g4);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+}
+
+.vend-av {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--g4), var(--g6));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin: 0 auto 10px;
+  border: 3px solid var(--cinza-bg);
+}
+
+.vend-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.vend-tipo {
+  font-size: 10.5px;
+  color: var(--cinza-sub);
+  margin-bottom: 8px;
+}
+
+.vend-rat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.btn-loja {
+  width: 100%;
+  background: var(--cinza-bg);
+  color: var(--g3);
+  font-weight: 700;
+  font-size: 11.5px;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid var(--cinza-borda);
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  
+  &:hover {
+    background: #d0eccc;
+  }
+}

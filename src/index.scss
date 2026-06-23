@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--cinza-bg);
+  color: var(--cinza-texto);
+  overflow-x: hidden;
+}
+
+:root {
+  --g1: #0a1a0a;
+  --g2: #112211;
+  --g3: #1a6b1a;
+  --g4: #2d9e2d;
+  --g5: #5ecb3e;
+  --g6: #78d832;
+  --g7: #a8e63d;
+  --g8: #c8f06a;
+  --branco: #ffffff;
+  --cinza-bg: #f2f8f0;
+  --cinza-card: #ffffff;
+  --cinza-borda: #d8eccc;
+  --cinza-texto: #1c2b1c;
+  --cinza-sub: #5a6e5a;
+  --laranja: #e8540a;
+  --amarelo: #f0c520;
+  --azul-link: #0066cc;
+  --radius-card: 14px;
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 28px rgba(0,0,0,0.13);
+}
+
+// RESPONSIVIDADE
+@media (max-width: 1100px) {
+  .prods-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cats-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .foot-in {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-in {
+    grid-template-columns: 1fr;
+  }
+  .hero-logo-area {
+    display: none;
+  }
+  .promo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pb-main {
+    grid-column: span 2;
+  }
+  .cats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .prods-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .como-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .esp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .hdr-in {
+    flex-wrap: wrap;
+  }
+  .search-cat {
+    display: none;
+  }
+  .cats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .prods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .promo-grid {
+    grid-template-columns: 1fr;
+  }
+  .pb-main {
+    grid-column: span 1;
+  }
+  .como-grid {
+    grid-template-columns: 1fr;
+  }
+  .foot-in {
+    grid-template-columns: 1fr;
+  }
+  .midbanner {
+    flex-direction: column;
+  }
+  .mb-steps {
+    gap: 12px;
+  }
+}
